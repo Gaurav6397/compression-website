@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Compressed Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Compressed Image Ready</h1>
+    <p>Your image has been compressed successfully. Click the link below to download it:</p>
+    <a href="{{ url_for('uploaded_file', filename=filename) }}" download>Download Compressed Image</a>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
